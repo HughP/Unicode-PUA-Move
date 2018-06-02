@@ -13,7 +13,10 @@ As seen in my text editor:
 
 ![Some Missing character](What-character-is-this.png)
 
-Sample text can be found in the sampe text file `Character conversion test/ 	character-text.txt`
+* **Note**: I do use CharisSIL in my text editor.
+*  **Note 2**: I am running CharisSIL 5.000 developer 1 as that is the latest which is in the SIL ppa. I am running linux (ubuntu/wasta 16.04). I am and everything is up-to-date.
+
+Sample text can be found in the sampe text file `Character conversion test/character-text.txt`
 
 I think that I am trying to target a character in SIL's PUA. I am led to this conclusion because David Rowe when looking at my data for another issue, mentioned that his version of the font CharisSIL showed the characters as inverted block. Suggesting that the PUA character had been moved to the main part of Unicode. I do not know which character was visible to him, as we were in a skype session.
 
@@ -59,7 +62,7 @@ U+FEFF |  | 1
 
 ### Included in this Repo
 
-* SIL's Teckit PUA converter mapping files sourced from [here}(https://github.com/silnrsi/wsresources/tree/master/scripts/Latn/mappings/sil-pua)
+* SIL's Teckit PUA converter mapping files sourced from [here](https://github.com/silnrsi/wsresources/tree/master/scripts/Latn/mappings/sil-pua)
 * SIL's PUA Description Files
 * Example test Files
 * Martin's Python code for looking up character attributes in Unicode
