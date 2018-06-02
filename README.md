@@ -13,25 +13,36 @@ As seen in my text editor:
 
 ![Some Missing character](What-character-is-this.png)
 
-Sample text can be found here:
-
-So now comes the interesting part.
-### Attempted methodologies
+Sample text can be found in the sampe text file `Character conversion test/ 	character-text.txt`
 
 I think that I am trying to target a character in SIL's PUA. I am led to this conclusion because David Rowe when looking at my data for another issue, mentioned that his version of the font CharisSIL showed the characters as inverted block. Suggesting that the PUA character had been moved to the main part of Unicode. I do not know which character was visible to him, as we were in a skype session.
 
-My files are all in the directory `Character conversion test`
- I copied one word with the character to be converted to another text file, saved it in file `smalltext.txt `.  Then tried to use (UnicodeCCount)[http://scripts.sil.org/UnicodeCharacterCount] to tell me which characters are in the file.
-results before
-```
+I have three different sources  of texts in this language which are showing some sort of character problem. I think they are all the same problem. But if not, the unit of learning that would be most helpful is how to target the bad acting character....
+
+### Attempted methodologies
+
+I have tried to use SIL's teckit and [UnicodeCCount](http://scripts.sil.org/UnicodeCharacterCount)
+
+My sample files are all in the directory `Character conversion test`.
+ I copied one word with the missing grapheme/character to be converted to another text file, saved it in file `smalltext.txt `.
+
+Then I process the file from the command line like so: ` $ txtconv -i smalltext.txt -o smalltext-post-teckit.txt -t SILPUA.tec`
+
+ When I process the output file with UnicodeCCount the only thing registers as a change is that a BOM mark is added. See file: `smalltext-post-teckit.txt `
+
+Output from  `UnicodeCCount`.
+Results before:
+
 Codepoint | Grapheme | Count
 ----|----|----
+U+000A |   | 1
+U+001E |   | 1
+U+0065 | e | 1
+U+006B | k | 1
+U+0308 |  | 1
 
-```
+results after:
 
-results after
-
-```
 Codepoint | Grapheme | Count
 ----|----|----
 U+000A |   | 1
@@ -41,10 +52,6 @@ U+006B | k | 1
 U+0308 |  | 1
 U+FEFF |  | 1
 
-```
-
-
- The only thing that happens when I run the file through techkit is that a BOM mark is added (at least according to UnicodeCCount). See file: `smalltext-post-teckit.txt `
 
 **So, how do I correctly ID the character in question?**
 
