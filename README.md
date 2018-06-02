@@ -3,6 +3,7 @@
 ## Goal
 I have a specific text I am trying to assure is encoded using the correct point locations in Unicode.
 
+## Problem
 Evidence that I have a problem.
 
 ```
