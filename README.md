@@ -14,7 +14,7 @@ As seen in my text editor:
 ![Some Missing character](What-character-is-this.png)
 
 * **Note**: I do use CharisSIL in my text editor.
-*  **Note 2**: I am running CharisSIL 5.000 developer 1 as that is the latest which is in the SIL ppa. I am running linux (ubuntu/wasta 16.04). I am and everything is up-to-date.
+*  **Note 2**: I am running CharisSIL 5.000 developer 1 as that is the latest which is in the SIL PPA. I am running linux (ubuntu/wasta 16.04). All software is up-to-date, according to my update managers.
 
 Sample text can be found in the sampe text file `Character conversion test/character-text.txt`
 
