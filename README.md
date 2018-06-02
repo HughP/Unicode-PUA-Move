@@ -17,7 +17,7 @@ Sample text can be found in the sampe text file `Character conversion test/ 	cha
 
 I think that I am trying to target a character in SIL's PUA. I am led to this conclusion because David Rowe when looking at my data for another issue, mentioned that his version of the font CharisSIL showed the characters as inverted block. Suggesting that the PUA character had been moved to the main part of Unicode. I do not know which character was visible to him, as we were in a skype session.
 
-I have three different sources  of texts in this language which are showing some sort of character problem. I think they are all the same problem. But if not, the unit of learning that would be most helpful is how to target the bad acting character....
+I have three different sources of texts in this language which are showing some sort of character problem (Donation text 1, Donation text 2, and toolbox file 1). This is a sample from _donation text 1_. Find a sample of _donation text 2_ [here](https://github.com/HughP/dnj-corups/blob/master/mass-text.txt).  I think they are all the same problem. But if not, the unit of learning that would be most helpful is how to target the bad acting character....
 
 ### Attempted methodologies
 
@@ -31,6 +31,7 @@ Then I process the file from the command line like so: ` $ txtconv -i smalltext.
  When I process the output file with UnicodeCCount the only thing registers as a change is that a BOM mark is added. See file: `smalltext-post-teckit.txt `
 
 Output from  `UnicodeCCount`.
+
 Results before:
 
 Codepoint | Grapheme | Count
@@ -41,7 +42,7 @@ U+0065 | e | 1
 U+006B | k | 1
 U+0308 |  | 1
 
-results after:
+Results after:
 
 Codepoint | Grapheme | Count
 ----|----|----
@@ -58,9 +59,11 @@ U+FEFF |  | 1
 
 ### Included in this Repo
 
-* SIL's Teckit PUA converter mapping files sourced from (here)[https://github.com/silnrsi/wsresources/tree/master/scripts/Latn/mappings/sil-pua]
+* SIL's Teckit PUA converter mapping files sourced from [here}(https://github.com/silnrsi/wsresources/tree/master/scripts/Latn/mappings/sil-pua)
 * SIL's PUA Description Files
 * Example test Files
+* Martin's Python code for looking up character attributes in Unicode
+* Martin's search and replace python code.
 
 ### License and ownership
 
